@@ -2,10 +2,7 @@ import random
 import datetime
 
 
-class TestData:
-    MainPageUrl = 'https://qa-scooter.praktikum-services.ru/'
-    OrderPageUrl = 'https://qa-scooter.praktikum-services.ru/order'
-    YandexMainUrl = 'https://ya.ru/'
+class ValidUserData:
 
     NewUserFirstNameList = ('Мария', 'Анна', 'Юлия', 'Алина', 'Елена', 'Ирина', 'София', 'Полина', 'Диана')
     NewUserFirstName = NewUserFirstNameList[random.randint(0, 8)]
@@ -16,6 +13,8 @@ class TestData:
     DateTomorrow = (datetime.date.today() + datetime.timedelta(days=1))
     OrderDate = str(DateTomorrow.strftime('%d/%m/%Y'))
     TextOrderSuccessButton = "Посмотреть статус"
+
+class ImportantAnswers:
 
     AnswerTextPrice = 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.'
     AnswerTextMany = 'Пока что у нас так: один заказ — один самокат. Если хотите' \
@@ -32,3 +31,6 @@ class TestData:
     AnswerTextCancel = 'Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим.' \
                        ' Все же свои.'
     AnswerTextMkad = 'Да, обязательно. Всем самокатов! И Москве, и Московской области.'
+
+class YaRuCheck:
+    YaRuPopUpText = 'Сделать Яндекс основным поиском?'
